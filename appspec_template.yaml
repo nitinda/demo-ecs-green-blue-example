@@ -8,7 +8,7 @@ Resources:
           ContainerName: "$CONTAINER_NAME"
           ContainerPort: "80"
         PlatformVersion: "LATEST"
-        NetworkConfiguration:
-          AwsvpcConfiguration:
-            Subnets: ["$SUBNET_1","$SUBNET_2"]
-            AssignPublicIp: "DISABLED"
+        # NetworkConfiguration:
+        #   AwsvpcConfiguration:
+        #     Subnets: ["$SUBNET_1","$SUBNET_2"]
+        #     AssignPublicIp: "DISABLED"
