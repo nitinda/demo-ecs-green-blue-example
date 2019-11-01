@@ -11,4 +11,4 @@ Resources:
         NetworkConfiguration:
           AwsvpcConfiguration:
             Subnets: ["$SUBNET_1","$SUBNET_2"]
-            AssignPublicIp: "ENABLED"
+            AssignPublicIp: "DISABLED"
