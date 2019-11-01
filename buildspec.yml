@@ -23,7 +23,6 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - aws ecs describe-task-definition --task-definition $TASK_DEFINITION_FAMILY | jq '.taskDefinition' > taskdef.json
-      - cat taskdef.json
       - envsubst < appspec_template.yaml > appspec.yaml
 artifacts:
   files:
